@@ -1,0 +1,21 @@
+<p>Here is a number that has been string interpolated {{numberVariable}}</p>
+<div>
+    <p (mouseover)="onMouseOver($event)">
+        Here is a function that has been string interpolated {{sendNumber()}}
+    </p>
+</div>
+<div>
+    <button (click)="onButtonClick($event)" [disabled]="disableProperty">Here's a button</button>
+</div>
+<div>
+    <label>Here is an input: </label>
+    <input (input)="onInput($event)" [type]="typeProperty">
+</div>
+<div>
+    <p [hidden]="hiddenProperty">This paragraph was hidden</p>
+</div>
+<div id="parent" (click)="onClick($event)" style="background-color: lightgreen; width: 50%; height: 50%; position: relative;">
+    <div id="child" style="background-color: cyan; width: 80%; height: 80%; position: relative; top: 20%; left: 20%">
+
+    </div>
+</div>
